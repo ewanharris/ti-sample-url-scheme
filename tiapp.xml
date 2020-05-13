@@ -52,9 +52,35 @@
 	</ios>
 	<android xmlns:android="http://schemas.android.com/apk/res/android">
 		<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1">
+			<application>
+				<activity android:name="ti.deeply.DeepLinkHandlerActivity" android:noHistory="true" android:excludeFromRecents="true" android:theme="@android:style/Theme.NoDisplay" android:launchMode="singleTask">
+					<!-- tisample://alert -->
+					<intent-filter>
+						<action android:name="android.intent.action.VIEW" />
+
+						<category android:name="android.intent.category.DEFAULT" />
+						<category android:name="android.intent.category.BROWSABLE" />
+						<data
+						android:host="alert"
+						android:scheme="tisample" />
+					</intent-filter>
+
+					<!-- tisample://updateLabel -->
+					<intent-filter>
+						<action android:name="android.intent.action.VIEW" />
+
+						<category android:name="android.intent.category.DEFAULT" />
+						<category android:name="android.intent.category.BROWSABLE" />
+						<data
+						android:host="updateLabel"
+						android:scheme="tisample" />
+					</intent-filter>
+				</activity>
+			</application>
 		</manifest>
 	</android>
 	<modules>
+		<module platform="android">ti.deeply</module>
 	</modules>
 	<deployment-targets>
 		<target device="android">true</target>
