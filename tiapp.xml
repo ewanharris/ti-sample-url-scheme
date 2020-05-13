@@ -43,7 +43,7 @@
 					<dict>
 						<key>CFBundleURLSchemes</key>
 						<array>
-						<string>tisample</string>
+							<string>tisample</string>
 						</array>
 					</dict>
 				</array>
