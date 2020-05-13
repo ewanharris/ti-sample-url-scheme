@@ -1,5 +1,7 @@
 <Alloy>
 	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+		<Label id="label" top="50">Open the mobile devices browser and try going to tisample://alert?titanium=rocks or tisample://updateLabel?titanium=rules</Label>
+
+		<Label id="displayLabel">This text will update dependent on the url parameters passed in during updateLabel</Label>
 	</Window>
 </Alloy>

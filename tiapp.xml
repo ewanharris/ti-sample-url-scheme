@@ -38,6 +38,15 @@
 				<false/>
 				<key>UIStatusBarStyle</key>
 				<string>UIStatusBarStyleDefault</string>
+				<key>CFBundleURLTypes</key>
+				<array>
+					<dict>
+						<key>CFBundleURLSchemes</key>
+						<array>
+						<string>tisample</string>
+						</array>
+					</dict>
+				</array>
 			</dict>
 		</plist>
 	</ios>
